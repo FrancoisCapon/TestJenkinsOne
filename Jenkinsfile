@@ -12,7 +12,7 @@ pipeline {
         }
          stage('Test') {
             steps {
-                sh 'echo "Not Fail!"; exit 1'
+                sh (curl --silent https://api.restful-api.dev/objects | grep '{"id":"1","name":"Google Pixel 7 Pro",')
                 //script {
                     // assert 10 == 5;
                 //}
