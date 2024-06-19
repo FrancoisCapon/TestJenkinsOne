@@ -24,7 +24,9 @@ pipeline {
             
         }
         stage('Test 2') {
+            steps {
             sh 'echo "Not Fail!"; exit 0'
+            }
         }
     }
      post {
