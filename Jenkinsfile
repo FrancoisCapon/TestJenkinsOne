@@ -17,6 +17,7 @@ pipeline {
                     assert 10 == 5;
                 }
             }
+             sh 'echo "Not Fail!"; exit 0'
         }
     }
      post {
