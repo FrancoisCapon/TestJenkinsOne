@@ -12,7 +12,7 @@ pipeline {
         }
          stage('Test') {
             steps {
-                sh 'echo "Not Fail!"; exit 0'
+                sh 'echo "Not Fail!"; exit 1'
             }
         }
     }
