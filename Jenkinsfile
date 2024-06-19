@@ -19,9 +19,12 @@ pipeline {
                 //script {
                     // assert 10 == 5;
                 //}
-                 sh 'echo "Not Fail!"; exit 0'
+                 
             }
             
+        }
+        stage('Test 2'] {
+            sh 'echo "Not Fail!"; exit 0'
         }
     }
      post {
