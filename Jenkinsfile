@@ -13,7 +13,8 @@ pipeline {
          stage('Test') {
             steps {
                 sh '''
-                    curl --silent https://api.restful-api.dev/objects | grep '{"id":"1","name":"Google Pixel 7 Pro",'
+                    # curl --silent https://api.restful-api.dev/objects | grep '{"id":"1","name":"Google Pixel 7 Pro",'
+                    curl --silent https://api.restful-api.dev/objects/7 | grep -E '^{"id":"7","name":"Apple MacBook Pro 16","data":{"year":2019,"price":1849.99,"CPU model":"Intel Core i9","Hard disk size":"1 TB"}}$'
                 '''
                 //script {
                     // assert 10 == 5;
