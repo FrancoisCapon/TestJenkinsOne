@@ -23,7 +23,7 @@ pipeline {
             }
             
         }
-        stage('Test 2'] {
+        stage('Test 2') {
             sh 'echo "Not Fail!"; exit 0'
         }
     }
