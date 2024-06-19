@@ -13,7 +13,7 @@ pipeline {
          stage('Test') {
             steps {
                 // sh 'echo "Not Fail!"; exit 0'
-                assert true == false;
+                assert 10 == 5;
             }
         }
     }
